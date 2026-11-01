@@ -37,7 +37,7 @@ export default function App() {
       }
     } catch (error) {
       console.error("Fetch Error:", error);
-      setDefaultSeats();
+      
     }
   };
 
