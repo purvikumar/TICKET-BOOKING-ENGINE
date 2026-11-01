@@ -21,8 +21,8 @@ public class TicketBookingService {
         this.bookingRepository=bookingRepository;
     }
 
-    public List<Seat> getAvailableSeats(){
-        return seatRepository.findByStatus(SeatStatus.AVAILABLE);
+    public List<Seat> getAllSeats(){
+        return seatRepository.findAll();
     }
 
     @Transactional
