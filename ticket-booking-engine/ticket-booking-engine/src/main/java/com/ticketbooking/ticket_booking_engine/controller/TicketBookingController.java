@@ -20,7 +20,7 @@ public class TicketBookingController {
     }
     @GetMapping
     public ResponseEntity<List<Seat>> getAvailableSeats(){
-        return ResponseEntity.ok(ticketBookingService.getAvailableSeats());
+        return ResponseEntity.ok(ticketBookingService.getAllSeats());
     }
     @PostMapping("/lock")
     public ResponseEntity<String> lockSeat(@RequestParam Long seatId){
