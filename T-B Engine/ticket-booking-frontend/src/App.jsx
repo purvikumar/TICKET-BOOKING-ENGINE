@@ -30,6 +30,7 @@ export default function App() {
   const fetchSeats = async () => {
     try {
       const response = await axios.get(API_BASE_URL);
+      console.log("backend se aaya data:",response.data);
       if (response.data && response.data.length > 0) {
         setSeats(response.data);
       } else {
