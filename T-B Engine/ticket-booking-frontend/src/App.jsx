@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8081/api/tickets';
-const AUTH_URL = 'http://localhost:8081/api/auth';
+const API_BASE_URL = 'https://ticket-booking-engine.onrender.com/api/tickets';
+const AUTH_URL = 'https://ticket-booking-engine.onrender.com/api/auth';
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState(null);
